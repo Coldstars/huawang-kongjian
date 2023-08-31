@@ -120,7 +120,6 @@
               </li>
             </ul>
           </div>
-
           <div class="box">
             <div class="box01">
               <ul class="box1-title">
@@ -137,10 +136,48 @@
                 <li class="selected">剩余待办</li>
                 <li>已办</li>
               </ul>
-              <div class="box2-content">
-                <img src="../assets/images/404.png" alt="" />
-                <p>暂无消息</p>
-              </div>
+              <ul class="box2-content">
+                <li>
+                  <div class="title">OA办公</div>
+                  <div class="info">
+                    <h1>【人力资源部】</h1>
+                    <p>
+                      您的审批表已有回馈您的审批表已您的审批表已审批表已您的审批表已审批表已您的审批表已
+                    </p>
+                  </div>
+                  <p class="time">2023/06/06 14:00</p>
+                </li>
+                <li>
+                  <div class="title">OA办公</div>
+                  <div class="info">
+                    <h1>【人力资源部】</h1>
+                    <p>
+                      您的审批表已有回馈您的审批表已您的审批表已审批表已您的审批表已审批表已您的审批表已
+                    </p>
+                  </div>
+                  <p class="time">2023/06/06 14:00</p>
+                </li>
+                <li>
+                  <div class="title">OA办公</div>
+                  <div class="info">
+                    <h1>【人力资源部】</h1>
+                    <p>
+                      您的审批表已有回馈您的审批表已您的审批表已审批表已您的审批表已审批表已您的审批表已
+                    </p>
+                  </div>
+                  <p class="time">2023/06/06 14:00</p>
+                </li>
+                <li>
+                  <div class="title">OA办公</div>
+                  <div class="info">
+                    <h1>【人力资源部】</h1>
+                    <p>
+                      您的审批表已有回馈您的审批表已您的审批表已审批表已您的审批表已审批表已您的审批表已
+                    </p>
+                  </div>
+                  <p class="time">2023/06/06 14:00</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -165,7 +202,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 104px;
+  padding-top: 88px;
 }
 .aside > .aside-info {
   display: flex;
@@ -179,7 +216,7 @@
 }
 .aside > .aside-info > h1 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   padding: 16px 0 8px 0;
 }
 .aside > .aside-info > .info-value {
@@ -255,7 +292,7 @@
   margin-bottom: 24px;
 }
 .aside > .aside-collect .collect-title > h1 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--color-white);
 }
@@ -325,7 +362,6 @@
 }
 .header > .tabs {
   display: flex;
-  font-size: 14px;
   align-items: center;
 }
 .header > .tabs li {
@@ -382,7 +418,7 @@
   padding-bottom: 24px;
 }
 .content .function > .funciton-info > h1 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 .content .function > .funciton-info a:hover {
@@ -408,13 +444,13 @@
   height: 64px;
   margin-right: 16px;
 }
-.content > ul > li > p {
-  font-size: 16px;
-  font-weight: medium;
+.content .function > ul > li > p {
+  font-size: 15px;
 }
 .content .box {
   flex: 1 1 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .content .box .box01,
 .box02 {
@@ -430,7 +466,6 @@
 .box02 > .box2-title {
   display: flex;
   align-items: center;
-  font-size: 16px;
 }
 .content .box .box01 > .box1-title > li,
 .box02 > .box2-title > li {
@@ -440,7 +475,7 @@
 }
 .content .box .box01 > .box1-title > .selected,
 .box02 > .box2-title > .selected {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 .content .box .box01 > .box1-title > li.selected::before,
@@ -457,8 +492,7 @@
 .content .box .box01 {
   margin-right: 32px;
 }
-.content .box .box01 > .box1-content,
-.box02 > .box2-content {
+.content .box .box01 > .box1-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -466,9 +500,59 @@
   flex: 1;
   padding-bottom: 40px;
 }
-.content .box .box01 > .box1-content > img,
-.box02.box2-content > img {
+.content .box .box01 > .box1-content > img {
   width: 220px;
   height: 220px;
+}
+.content .box .box02 > .box2-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.content .box .box02 > .box2-content > li {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+.content .box .box02 > .box2-content > li > .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 48px;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 0 16px;
+  text-align: center;
+  color: var(--color-primary);
+  background-color: var(--color-aside-font);
+  margin-right: 12px;
+}
+.content .box .box02 > .box2-content > li > .info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 0;
+}
+.content .box .box02 > .box2-content > li > .info > p {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .box .box02 > .box2-content > li > .info > h1 {
+  font-size: 15px;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-left: -8px;
+  margin-bottom: 8px;
+}
+.content .box .box02 > .box2-content > li > .time {
+  font-size: 12px;
+  color: var(--color-text-third);
+  margin-left: 12px;
 }
 </style>
